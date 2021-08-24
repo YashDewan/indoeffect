@@ -9,7 +9,7 @@ let source = "the-times-of-india";
 let accordionExample = document.getElementById('accordionExample');
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apikey}`, true);
+xhr.open('GET', `https://saurav.tech/NewsAPI/top-headlines/category/general/in.json`, true);
 xhr.onload = function() {
     if (this.status === 200) {
         let obj = JSON.parse(this.responseText);
